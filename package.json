@@ -1,0 +1,27 @@
+{
+  "name": "freezify",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "standard --verbose | snazzy"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "author": "Francisco Dias <francisco@baiodias.com> (http://franciscodias.net/)",
+  "license": "MIT",
+  "devDependencies": {
+    "fs-blob-store": "^5.2.1",
+    "pre-commit": "^1.1.2",
+    "snazzy": "^3.0.0",
+    "standard": "^6.0.7"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "cheerio": "^0.20.0",
+    "lodash": "^4.6.1",
+    "trumpet": "^1.7.2",
+    "url-join": "0.0.1"
+  }
+}
