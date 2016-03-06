@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Some Font';
+  src: url('some-font.woff2');
+}
+
 body {
+  font-family: 'Some Font', serif;
   background-color: yellow;
 }
