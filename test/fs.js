@@ -1,8 +1,9 @@
 const freezify = require('..')
 const fs = require('fs-blob-store')
+const path = require('path')
 
-const ORIGIN_PATH = __dirname + '/example'
-const DEST_PATH = __dirname + '/dest'
+const ORIGIN_PATH = path.join(__dirname, '/example/')
+const DEST_PATH = path.join(__dirname, '/dest')
 
 const options = {
   origin: {

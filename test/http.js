@@ -1,9 +1,10 @@
 const freezify = require('..')
 const fs = require('fs-blob-store')
 const http = require('http-blob-store')
+const path = require('path')
 
 const ORIGIN_PATH = 'http://localhost:8000/'
-const DEST_PATH = __dirname + '/dest'
+const DEST_PATH = path.join(__dirname, '/dest')
 
 const options = {
   origin: {

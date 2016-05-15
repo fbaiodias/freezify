@@ -4,14 +4,21 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
+    "test": "ava",
     "lint": "standard --verbose | snazzy"
   },
   "pre-commit": [
     "lint"
   ],
+  "ava": {
+    "files": [
+      "**/*.test.js"
+    ]
+  },
   "author": "Francisco Dias <francisco@baiodias.com> (http://franciscodias.net/)",
   "license": "MIT",
   "devDependencies": {
+    "ava": "^0.14.0",
     "fs-blob-store": "^5.2.1",
     "http-blob-store": "0.0.1",
     "pre-commit": "^1.1.2",
